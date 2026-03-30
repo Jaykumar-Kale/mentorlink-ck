@@ -1,4 +1,4 @@
-# 🎓 MentorLink — CybageKhushboo Charitable Trust
+# MentorLink - CybageKhushboo Charitable Trust
 
 > A structured mentorship platform connecting **CybageKhushboo scholars** with **Cybage Software employee mentors**, providing guidance on career development, technical skills, soft skills, and professional growth.
 
@@ -9,9 +9,9 @@
 
 ---
 
-## ✨ Features
+## Features
 
-### 👨‍🎓 For Scholars (Mentees)
+### For Scholars (Mentees)
 - Complete mentee dashboard with personal profile
 - Need analysis form to identify learning goals and challenges
 - Schedule and track mentorship sessions
@@ -19,14 +19,14 @@
 - Session feedback and mentor ratings
 - Profile management with upload to Cloudinary
 
-### 👨‍💼 For Mentors
+### For Mentors
 - Mentor dashboard showing assigned scholars
 - View and manage mentorship sessions
 - Provide session summaries and feedback
 - Track mentee progress and ratings
 - Profile showcase with expertise and availability
 
-### 👨‍💻 For Administrators
+### For Administrators
 - User management (create, view, deactivate users)
 - Automated mentor-mentee matching algorithm
 - Session management and oversight
@@ -34,7 +34,7 @@
 - Analytics and reporting dashboard
 - All user roles: Admin, Mentor, Mentee, Alumni, Volunteer
 
-### 🌐 Public Pages
+### Public Pages
 - Homepage with platform overview
 - Scholarship program information
 - About and contact pages
@@ -42,7 +42,7 @@
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18.2** — UI library
@@ -69,93 +69,56 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-```
+```text
 mentorlink-cybage-khushboo/
-├── 📑 README.md
-├── 📦 package.json          (root scripts)
-│
-├── 📂 client/               ← React Frontend (Port 3000)
-│   ├── 📦 package.json
-│   ├── 🎨 tailwind.config.js
-│   ├── 📝 vercel.json
-│   ├── 📂 public/
-│   │   └── index.html
-│   ├── 📂 src/
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   ├── index.css
-│   │   ├── 📂 components/
-│   │   │   ├── Navbar.js
-│   │   │   ├── Footer.js
-│   │   │   └── DashboardLayout.js
-│   │   ├── 📂 context/
-│   │   │   └── AuthContext.js          (Auth state management)
-│   │   ├── 📂 pages/
-│   │   │   ├── LoginPage.js
-│   │   │   ├── RegisterPage.js
-│   │   │   ├── ForgotPassword.js
-│   │   │   ├── ResetPassword.js
-│   │   │   ├── 📂 public/              (Unauthenticated routes)
-│   │   │   │   ├── HomePage.js
-│   │   │   │   ├── AboutPage.js
-│   │   │   │   ├── ContactPage.js
-│   │   │   │   ├── ScholarshipPage.js
-│   │   │   │   └── TestimonialsPage.js
-│   │   │   ├── 📂 mentee/              (Mentee dashboard)
-│   │   │   │   ├── Dashboard.js
-│   │   │   │   ├── Profile.js
-│   │   │   │   ├── Modules.js
-│   │   │   │   ├── NeedAnalysis.js
-│   │   │   │   └── Sessions.js
-│   │   │   ├── 📂 mentor/              (Mentor dashboard)
-│   │   │   │   ├── Dashboard.js
-│   │   │   │   ├── Profile.js
-│   │   │   │   ├── Scholars.js
-│   │   │   │   └── Sessions.js
-│   │   │   └── 📂 admin/               (Admin dashboard)
-│   │   │       ├── Dashboard.js
-│   │   │       ├── Users.js
-│   │   │       ├── Matching.js
-│   │   │       ├── Sessions.js
-│   │   │       └── Modules.js
-│   │   └── 📂 utils/
-│   │       └── api.js                  (Axios instance & API config)
-│   └── 📂 build/                       (Production build)
-│
-└── 📂 server/               ← Node.js Backend (Port 5000)
-    ├── 📦 package.json
-    ├── 📄 index.js                     (Express app setup)
-    ├── 📂 controllers/                 (Business logic)
-    │   ├── authController.js           (Register, login, password reset)
-    │   ├── adminController.js          (Admin operations)
-    │   ├── sessionController.js        (Session management)
-    │   ├── moduleController.js         (Modules & resources)
-    │   └── needAnalysisController.js   (Need analysis forms)
-    ├── 📂 middleware/
-    │   └── auth.js                     (JWT verification)
-    ├── 📂 models/                      (MongoDB schemas)
-    │   ├── User.js                     (Users with roles)
-    │   ├── Session.js                  (Mentorship sessions)
-    │   ├── Module.js                   (Learning modules)
-    │   └── NeedAnalysis.js             (Mentee assessment)
-    ├── 📂 routes/                      (API endpoints)
-    │   ├── authRoutes.js
-    │   ├── userRoutes.js
-    │   ├── adminRoutes.js
-    │   ├── sessionRoutes.js
-    │   ├── moduleRoutes.js
-    │   └── needAnalysisRoutes.js
-    └── 📂 utils/
-        └── matching.js                 (Mentor-mentee matching logic)
+|-- README.md
+|-- package.json                        (root scripts)
+|-- client/                             (React frontend - Port 3000)
+|   |-- package.json
+|   |-- tailwind.config.js
+|   |-- vercel.json
+|   |-- public/
+|   |   `-- index.html
+|   |-- src/
+|   |   |-- App.js
+|   |   |-- index.js
+|   |   |-- index.css
+|   |   |-- components/
+|   |   |   |-- Navbar.js
+|   |   |   |-- Footer.js
+|   |   |   `-- DashboardLayout.js
+|   |   |-- context/
+|   |   |   `-- AuthContext.js          (Auth state management)
+|   |   |-- pages/
+|   |   |   |-- LoginPage.js
+|   |   |   |-- RegisterPage.js
+|   |   |   |-- ForgotPassword.js
+|   |   |   |-- ResetPassword.js
+|   |   |   |-- public/                 (Unauthenticated routes)
+|   |   |   |-- mentee/                 (Mentee dashboard)
+|   |   |   |-- mentor/                 (Mentor dashboard)
+|   |   |   `-- admin/                  (Admin dashboard)
+|   |   `-- utils/
+|   |       `-- api.js                  (Axios instance and API config)
+|   `-- build/                          (Production build)
+`-- server/                             (Node.js backend - Port 5000)
+  |-- package.json
+  |-- index.js                        (Express app setup)
+  |-- controllers/                    (Business logic)
+  |-- middleware/
+  |-- models/                         (MongoDB schemas)
+  |-- routes/                         (API endpoints)
+  `-- utils/
+    `-- matching.js                 (Mentor-mentee matching logic)
 ```
 
 
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - **Node.js** v14+ (with npm or yarn)
@@ -222,7 +185,7 @@ npm start
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 ### Backend (`server/.env`)
 ```env
@@ -242,7 +205,7 @@ CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 
 # Email Service (Gmail SMTP)
-# ⚠️ Use Gmail App Password, NOT your regular password
+# Use Gmail App Password, not your regular password
 # How to create App Password: https://support.google.com/accounts/answer/185833
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
@@ -251,19 +214,19 @@ EMAIL_PASS=your_16_character_app_password
 EMAIL_FROM=CybageKhushboo MentorLink <noreply@mentorlink.com>
 
 # Frontend URL (for CORS & email links)
-CLIENT_URL=http://localhost:3000
+CLIENT_URL=https://mentorlink-cybage.vercel.app
 ```
 
 ### Frontend (`client/.env`)
 ```env
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_API_URL=https://mentorlink-cybage.onrender.com
 ```
 
 **Note:** Email Service and Cloudinary are **optional** for local testing. The app will work with just `MONGO_URI` and `JWT_SECRET`.
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 ### User Model
 ```javascript
@@ -378,101 +341,101 @@ REACT_APP_API_URL=http://localhost:5000
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication Routes (`/api/auth`)
 | Method | Endpoint | Description | Auth |
 |--------|----------|-------------|------|
-| POST | `/register` | Register new user | ❌ |
-| POST | `/login` | Login user | ❌ |
-| GET | `/me` | Get current user profile | ✅ |
-| POST | `/forgot-password` | Request password reset | ❌ |
-| POST | `/reset-password/:token` | Reset password with token | ❌ |
-| PUT | `/update-profile` | Update user profile | ✅ |
+| POST | `/register` | Register new user | No |
+| POST | `/login` | Login user | No |
+| GET | `/me` | Get current user profile | Yes |
+| POST | `/forgot-password` | Request password reset | No |
+| POST | `/reset-password/:token` | Reset password with token | No |
+| PUT | `/update-profile` | Update user profile | Yes |
 
 ### User Routes (`/api/users`)
 | Method | Endpoint | Description | Auth |
 |--------|----------|-------------|------|
-| GET | `/` | Get all users | ✅ (Admin) |
-| GET | `/:id` | Get user by ID | ✅ |
-| PUT | `/:id` | Update user | ✅ (Admin/Owner) |
-| PUT | `/:id/photo` | Upload profile photo | ✅ |
+| GET | `/` | Get all users | Yes (Admin) |
+| GET | `/:id` | Get user by ID | Yes |
+| PUT | `/:id` | Update user | Yes (Admin/Owner) |
+| PUT | `/:id/photo` | Upload profile photo | Yes |
 
 ### Session Routes (`/api/sessions`)
 | Method | Endpoint | Description | Auth |
 |--------|----------|-------------|------|
-| POST | `/` | Create new session | ✅ (Mentor) |
-| GET | `/` | Get sessions (filtered by role) | ✅ |
-| GET | `/:id` | Get session details | ✅ |
-| PUT | `/:id` | Update session | ✅ (Mentor) |
-| PUT | `/:id/feedback` | Add feedback to session | ✅ |
-| PUT | `/:id/status` | Update session status | ✅ (Mentor/Admin) |
+| POST | `/` | Create new session | Yes (Mentor) |
+| GET | `/` | Get sessions (filtered by role) | Yes |
+| GET | `/:id` | Get session details | Yes |
+| PUT | `/:id` | Update session | Yes (Mentor) |
+| PUT | `/:id/feedback` | Add feedback to session | Yes |
+| PUT | `/:id/status` | Update session status | Yes (Mentor/Admin) |
 
 ### Module Routes (`/api/modules`)
 | Method | Endpoint | Description | Auth |
 |--------|----------|-------------|------|
-| GET | `/` | Get all active modules | ✅ |
-| POST | `/` | Create new module | ✅ (Admin) |
-| GET | `/:id` | Get module details | ✅ |
-| PUT | `/:id` | Update module | ✅ (Admin) |
-| POST | `/:id/resources` | Upload resource to module | ✅ (Admin) |
-| DELETE | `/:id` | Delete module | ✅ (Admin) |
+| GET | `/` | Get all active modules | Yes |
+| POST | `/` | Create new module | Yes (Admin) |
+| GET | `/:id` | Get module details | Yes |
+| PUT | `/:id` | Update module | Yes (Admin) |
+| POST | `/:id/resources` | Upload resource to module | Yes (Admin) |
+| DELETE | `/:id` | Delete module | Yes (Admin) |
 
 ### Need Analysis Routes (`/api/need-analysis`)
 | Method | Endpoint | Description | Auth |
 |--------|----------|-------------|------|
-| POST | `/` | Submit need analysis | ✅ (Mentee) |
-| GET | `/` | Get all need analyses | ✅ (Admin) |
-| GET | `/:id` | Get need analysis by mentee | ✅ |
-| PUT | `/:id` | Update need analysis | ✅ (Mentee/Admin) |
+| POST | `/` | Submit need analysis | Yes (Mentee) |
+| GET | `/` | Get all need analyses | Yes (Admin) |
+| GET | `/:id` | Get need analysis by mentee | Yes |
+| PUT | `/:id` | Update need analysis | Yes (Mentee/Admin) |
 
 ### Admin Routes (`/api/admin`)
 | Method | Endpoint | Description | Auth |
 |--------|----------|-------------|------|
-| POST | `/match` | Run mentor-mentee matching | ✅ (Admin) |
-| GET | `/dashboard` | Admin dashboard stats | ✅ (Admin) |
-| GET | `/users/stats` | User statistics | ✅ (Admin) |
-| PUT | `/users/:id/status` | Activate/deactivate user | ✅ (Admin) |
+| POST | `/match` | Run mentor-mentee matching | Yes (Admin) |
+| GET | `/dashboard` | Admin dashboard stats | Yes (Admin) |
+| GET | `/users/stats` | User statistics | Yes (Admin) |
+| PUT | `/users/:id/status` | Activate/deactivate user | Yes (Admin) |
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
-### Backend — Render.com (Free)
+### Backend - Render.com (Free)
 
 1. Push your code to GitHub (public or private)
 2. Go to [render.com](https://render.com) and sign up
-3. Click **New** → **Web Service**
+3. Click **New** -> **Web Service**
 4. Connect your GitHub repository
 5. Configure:
-   - **Name:** `mentorlink-ck-backend`
+  - **Name:** `mentorlink-cybage`
    - **Root Directory:** `server`
    - **Runtime:** Node
    - **Build Command:** `npm install`
    - **Start Command:** `npm start`
-6. Add environment variables (Settings → Environment):
+6. Add environment variables (Settings -> Environment):
    - Copy all variables from your `.env` file
    - Make sure `CLIENT_URL` points to your Vercel URL
 7. Click **Create Web Service**
 8. Wait for deployment (2-5 minutes)
-9. Copy your Render URL (e.g., `https://mentorlink-ck-backend.onrender.com`)
+9. Copy your Render URL: `https://mentorlink-cybage.onrender.com`
 
-### Frontend — Vercel (Free)
+### Frontend - Vercel (Free)
 
 1. Go to [vercel.com](https://vercel.com) and sign up
-2. Click **Add New** → **Project**
+2. Click **Add New** -> **Project**
 3. Import your GitHub repository
 4. Configure:
-   - **Project Name:** `mentorlink-ck-frontend`
+    - **Project Name:** `mentorlink-cybage`
    - **Framework:** React
    - **Root Directory:** `client`
    - **Build Command:** `npm run build`
    - **Output Directory:** `build`
 5. Add environment variables:
-   - `REACT_APP_API_URL` = `https://mentorlink-ck-backend.onrender.com`
+    - `REACT_APP_API_URL` = `https://mentorlink-cybage.onrender.com`
 6. Click **Deploy**
 7. Wait for deployment (1-3 minutes)
-8. Your frontend URL: `https://mentorlink-ck-frontend.vercel.app`
+8. Your frontend URL: `https://mentorlink-cybage.vercel.app`
 
 ### Post-Deployment Checklist
 - [ ] Test login functionality
@@ -484,13 +447,13 @@ REACT_APP_API_URL=http://localhost:5000
 
 ---
 
-## 🔑 Initial Setup After Deployment
+## Initial Setup After Deployment
 
 ### Create First Admin User
 
 **Option 1: Using curl**
 ```bash
-curl -X POST https://your-backend-url.onrender.com/api/auth/register \
+curl -X POST https://mentorlink-cybage.onrender.com/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Admin User",
@@ -507,7 +470,7 @@ curl -X POST https://your-backend-url.onrender.com/api/auth/register \
 4. Use the admin insertion form
 
 ### First Steps
-1. Log in with admin credentials at `https://your-frontend-url.vercel.app/login`
+1. Log in with admin credentials at `https://mentorlink-cybage.vercel.app/login`
 2. Navigate to Admin Dashboard
 3. Create mentor and mentee accounts
 4. Create learning modules
@@ -515,34 +478,34 @@ curl -X POST https://your-backend-url.onrender.com/api/auth/register \
 
 ---
 
-## 📱 User Roles & Permissions
+## User Roles and Permissions
 
-### 👤 Admin
+### Admin
 - View and manage all users
 - Create/edit/delete modules and resources
 - Run mentor-mentee matching algorithm
 - View all sessions and need analyses
 - Access admin dashboard with analytics
 
-### 👨‍💼 Mentor
+### Mentor
 - View assigned mentees
 - Create and schedule sessions
 - Provide session feedback and ratings
 - Update profile and expertise
 - View mentee need analysis
 
-### 👨‍🎓 Mentee
+### Mentee
 - Complete need analysis form
 - Schedule sessions with assigned mentor
 - Access learning modules
 - Provide feedback on sessions
 - Update profile information
 
-### 🎓 Alumni
+### Alumni
 - View-only access to platform
 - Connect with current mentees for guidance
 
-### 🤝 Volunteer
+### Volunteer
 - Assist with platform activities
 - Limited access to resources
 
@@ -550,7 +513,7 @@ curl -X POST https://your-backend-url.onrender.com/api/auth/register \
 
 ---
 
-## 🎨 Design System
+## Design System
 
 ### Color Palette
 | Token | Color | Usage |
@@ -576,7 +539,7 @@ curl -X POST https://your-backend-url.onrender.com/api/auth/register \
 
 ---
 
-## 📜 NPM Scripts
+## NPM Scripts
 
 ### Root Directory
 ```bash
@@ -601,11 +564,11 @@ npm run build                # Production build
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Issues
 
-**❌ MongoDB Connection Error**
+**MongoDB Connection Error**
 ```
 Error: connect ECONNREFUSED
 ```
@@ -614,7 +577,7 @@ Error: connect ECONNREFUSED
 - Check if IP whitelist includes your current IP
 - Confirm network connectivity to MongoDB cluster
 
-**❌ JWT Authentication Fails**
+**JWT Authentication Fails**
 ```
 Error: jwt malformed
 ```
@@ -623,7 +586,7 @@ Error: jwt malformed
 - Check if token is being sent in Authorization header
 - Verify token hasn't expired (default: 7 days)
 
-**❌ CORS Error**
+**CORS Error**
 ```
 Access to XMLHttpRequest blocked by CORS policy
 ```
@@ -632,7 +595,7 @@ Access to XMLHttpRequest blocked by CORS policy
 - Check CORS configuration in `server/index.js`
 - Ensure credentials: true in axios requests
 
-**❌ Email Not Sending**
+**Email Not Sending**
 ```
 Error: connect ECONNREFUSED on port 587
 ```
@@ -643,21 +606,21 @@ Error: connect ECONNREFUSED on port 587
 
 ### Frontend Issues
 
-**❌ Blank Page / White Screen**
+**Blank Page / White Screen**
 **Solution:**
 - Check browser console for errors (F12)
 - Verify API_URL in `.env` file
 - Clear browser cache and reload
 - Check if backend server is running
 
-**❌ Login Not Working**
+**Login Not Working**
 **Solution:**
 - Verify credentials exist in MongoDB
 - Check network tab for API errors
 - Ensure JWT token is stored in localStorage
 - Try creating new user with register form
 
-**❌ Image Upload Fails**
+**Image Upload Fails**
 **Solution:**
 - Verify Cloudinary credentials in `.env`
 - Check file size (max 10MB)
@@ -666,14 +629,14 @@ Error: connect ECONNREFUSED on port 587
 
 ### Deployment Issues
 
-**❌ Backend on Render Crashes After Deploy**
+**Backend on Render Crashes After Deploy**
 **Solution:**
 - Check Render logs for error messages
 - Verify all environment variables are set
 - Ensure MongoDB URI is correct for production
 - Check Node version compatibility
 
-**❌ Frontend Can't Connect to Backend**
+**Frontend Cannot Connect to Backend**
 **Solution:**
 - Verify `REACT_APP_API_URL` in Vercel env vars
 - Check if backend server is running on Render
@@ -682,7 +645,7 @@ Error: connect ECONNREFUSED on port 587
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how to help:
 
@@ -714,7 +677,7 @@ npm run dev
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ### Frontend Key Dependencies
 - `react`: ^18.2.0
@@ -735,7 +698,7 @@ npm run dev
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [MongoDB Documentation](https://docs.mongodb.com)
 - [Express.js Guide](https://expressjs.com)
@@ -747,13 +710,13 @@ npm run dev
 
 ---
 
-## 📞 Support & Contact
+## Support and Contact
 
 **CybageKhushboo Charitable Trust**
-- 📧 Email: csr_team@cybage.com
-- 📞 Phone: 020-66041700 Extn: 6619
-- 📍 Address: Cybage Towers, Kalyani Nagar, Pune – 411014
-- 🌐 Website: [cybage.com](https://www.cybage.com)
+- Email: csr_team@cybage.com
+- Phone: 020-66041700 Extn: 6619
+- Address: Cybage Towers, Kalyani Nagar, Pune - 411014
+- Website: [cybage.com](https://www.cybage.com)
 
 ### For Technical Support
 - Create an issue on GitHub
@@ -762,7 +725,7 @@ npm run dev
 
 ---
 
-## 📄 License
+## License
 
 This project is owned and maintained by **CybageKhushboo Charitable Trust**. All rights reserved.
 
@@ -770,7 +733,7 @@ For licensing inquiries, please contact: csr_team@cybage.com
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - CybageKhushboo Charitable Trust for the initiative
 - Cybage Software employees (mentors) for their dedication
@@ -779,9 +742,10 @@ For licensing inquiries, please contact: csr_team@cybage.com
 
 ---
 
-**Happy Mentoring! 🚀**
+**Happy Mentoring.**
 
 ---
 
 **Last Updated:** March 2026
 **Version:** 1.0.0
+
